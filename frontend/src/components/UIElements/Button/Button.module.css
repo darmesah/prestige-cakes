@@ -1,0 +1,50 @@
+.button {
+    font-family: "DMSans-Medium";
+    border: none;
+}
+
+.primary {
+    background-color: #690127;
+    color: #fff;
+}
+
+.primary:hover {
+    background-color: #000;
+}
+
+.secondary {
+    background-color: #fafafa;
+    color: #690127;
+}
+
+.secondary:hover {
+    background-color: #F3F3F3;
+}
+
+.third {
+    color: #000000;
+    background-color: #f6b9d0;
+}
+
+.third:hover {
+    background-color: #fad5e3;
+}
+
+.outline {}
+
+.tetiary {}
+
+.large {
+    padding: 12px 27px;
+    font-size: 1rem;
+}
+
+.medium {}
+
+.small {}
+
+.rounded {}
+
+.semi_rounded {
+    border-radius: 8px;
+}
