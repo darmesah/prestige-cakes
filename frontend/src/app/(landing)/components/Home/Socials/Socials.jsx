@@ -7,8 +7,20 @@ const Socials = () => {
       <p>Follow us to stay up to date on all things Prestige Cakes.</p>
       <div className={classes.socials_flex}>
         <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
+          <img src="/images/socials/placeholder.png" alt="placeholder" />
+          <img src="/images/socials/1.png" alt="instagram" />
+        </div>
+        <div>
+          <img src="/images/socials/placeholder.png" alt="placeholder" />
+          <img src="/images/socials/2.png" alt="instagram" />
+        </div>
+        <div>
+          <img src="/images/socials/placeholder.png" alt="placeholder" />
+          <img src="/images/socials/3.png" alt="instagram" />
+        </div>
+        <div>
+          <img src="/images/socials/placeholder.png" alt="placeholder" />
+          <img src="/images/socials/4.png" alt="instagram" />
         </div>
       </div>
     </div>

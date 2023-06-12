@@ -1,6 +1,6 @@
 .container {
     overflow: auto;
-    padding: 10px 20px 30px 20px;
+    padding: 10px 0px 30px 30px;
 }
 
 .container h3 {
@@ -12,4 +12,15 @@
 .container ul {
     display: flex;
     padding: 0;
+}
+
+@media (min-width: 1300px) {
+    .container {
+        padding: 50px 0px 30px 30px;
+    }
+
+    .container h3 {
+        font-size: 1.6rem;
+        padding-bottom: 40px;
+    }
 }

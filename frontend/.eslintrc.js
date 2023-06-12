@@ -19,5 +19,6 @@ module.exports = {
     semi: "off",
     "no-unused-vars": "off",
     "no-trailing-spaces": "off",
+    "space-before-function-paren": "off",
   },
 };

@@ -4,7 +4,6 @@
 
 .container img {
     width: 170px;
-    /* border-radius: 8px; */
 }
 
 .container h4 {
@@ -21,4 +20,31 @@
 
 .container span {
     color: #BB251A;
+}
+
+@media (min-width: 768px) {
+    .container img {
+        width: 210px;
+    }
+
+    .container h4 {
+        font-size: 1.02rem;
+        font-family: 'DMSans-Bold';
+    }
+}
+
+@media (min-width: 1024px) {
+    .container img {
+        width: 153px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        padding-right: 15px;
+    }
+
+    .container img {
+        width: 210px;
+    }
 }

@@ -41,10 +41,22 @@
 
 .medium {}
 
-.small {}
-
-.rounded {}
+.small {
+    padding: 9px 18px;
+    font-size: .9rem;
+    font-family: "DMSans-Regular";
+}
 
 .semi_rounded {
     border-radius: 8px;
+}
+
+.rounded {
+    border-radius: 18px;
+}
+
+@media (min-width: 768px) {
+    .large {
+        padding: 12px 35px;
+    }
 }

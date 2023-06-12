@@ -1,20 +1,9 @@
-import Image from "next/image";
-
 import BestSellersList from "./components/Home/BestSellers/BestSellersList/BestSellersList";
 import DealsList from "./components/Home/Deals/DealsList/DealsList";
-
+import Socials from "./components/Home/Socials/Socials";
 import Button from "@/components/UIElements/Button/Button";
 
 import classes from "./components/Home/Home.module.css";
-
-import deals from "./components/Home/images/deals.svg";
-import wedding from "./components/Home/images/wedding.svg";
-import birthday from "./components/Home/images/birthday.svg";
-import cup_cakes from "./components/Home/images/cup_cakes.svg";
-import pastries from "./components/Home/images/pastries.svg";
-import cookies from "./components/Home/images/cookies.svg";
-import cake_slices from "./components/Home/images/cake_slices.svg";
-import doughnuts from "./components/Home/images/doughnuts.svg";
 
 const HomePage = () => {
   return (
@@ -32,35 +21,35 @@ const HomePage = () => {
       <div className={classes.shortcuts}>
         <ul>
           <li>
-            <Image src={deals} alt="deals" />
+            <img src="/images/shortcuts/deals.png" alt="deals" />
             <p>Deals</p>
           </li>
           <li>
-            <Image src={wedding} alt="wedding" />
+            <img src="/images/shortcuts/wedding.png" alt="wedding" />
             <p>Wedding</p>
           </li>
           <li>
-            <Image src={birthday} alt="birthday" />
+            <img src="/images/shortcuts/birthday.png" alt="birthday" />
             <p>Birthday</p>
           </li>
           <li>
-            <Image src={cup_cakes} alt="cup_cakes" />
+            <img src="/images/shortcuts/cup_cakes.png" alt="cup_cakes" />
             <p>Cup cakes</p>
           </li>
           <li>
-            <Image src={pastries} alt="pastries" />
+            <img src="/images/shortcuts/pastries.png" alt="pastries" />
             <p>Pastries</p>
           </li>
           <li>
-            <Image src={cookies} alt="cookies" />
+            <img src="/images/shortcuts/cookies.png" alt="cookies" />
             <p>Cookies</p>
           </li>
           <li>
-            <Image src={cake_slices} alt="cake_slices" />
+            <img src="/images/shortcuts/cake_slices.png" alt="cake_slices" />
             <p>Cake slices</p>
           </li>
           <li>
-            <Image src={doughnuts} alt="doughnuts" />
+            <img src="/images/shortcuts/doughnuts.png" alt="doughnuts" />
             <p>Doughnuts</p>
           </li>
         </ul>
@@ -101,66 +90,77 @@ const HomePage = () => {
       </div>
       <div className={classes.why}>
         <h3>Why choose us</h3>
-        <div>
-          <img src="/images/why/1.png" alt="quality" />
-          <h4>Quality is our biggest flex</h4>
-          <p>
-            From carefully selected ingredients to thoughtful packaging, we give
-            you the absolute best.
-          </p>
-        </div>
-        <div>
-          <img src="/images/why/2.png" alt="quality" />
-          <h4>Best-in-class service</h4>
-          <p>
-            We care about ensuring your entire experience with us is as
-            delicious as our treats.
-          </p>
-        </div>
-        <div>
-          <img src="/images/why/3.png" alt="quality" />
-          <h4>We deliver to your door</h4>
-          <p>
-            We’ve got you covered, anywhere you are ordering from all over the
-            nation.
-          </p>
+        <div className={classes.why_flex}>
+          <div>
+            <img src="/images/why/1.png" alt="quality" />
+            <h4>Quality is our biggest flex</h4>
+            <p>
+              From carefully selected ingredients to thoughtful packaging, we
+              give you the absolute best.
+            </p>
+          </div>
+          <div>
+            <img src="/images/why/2.png" alt="quality" />
+            <h4>Best-in-class service</h4>
+            <p>
+              We care about ensuring your entire experience with us is as
+              delicious as our treats.
+            </p>
+          </div>
+          <div>
+            <img src="/images/why/3.png" alt="quality" />
+            <h4>We deliver to your door</h4>
+            <p>
+              We’ve got you covered, anywhere you are ordering from all over the
+              nation.
+            </p>
+          </div>
         </div>
       </div>
       <div className={classes.donut}>
-        <h3>
-          Indulge your cravings today with our doughnuts delivered straight to
-          your door.
-        </h3>
-        <p>Reward yourself with delicious awesomeness from us.</p>
         <div>
-          <Button primary large semi_rounded>
-            Order now
-          </Button>
-          <Button secondary large semi_rounded>
-            See more
-          </Button>
+          <h3>
+            Indulge your cravings today with our doughnuts delivered straight to
+            your door.
+          </h3>
+          <p>Reward yourself with delicious awesomeness from us.</p>
+          <div>
+            <Button primary large semi_rounded>
+              Order now
+            </Button>
+            <Button secondary large semi_rounded>
+              See more
+            </Button>
+          </div>
         </div>
-        <img src="/images/donut.png" alt="donut" />
+        <div>
+          <img src="/images/donut.png" alt="donut" />
+        </div>
       </div>
       <DealsList />
       <div className={classes.explorers}>
-        <h3>
-          Join our community of explorers to learn and share with like-minds
-        </h3>
-        <p>
-          Prestige Explorers Community is for cake makers and enthusiasts to
-          have fun and develop themselves.
-        </p>
         <div>
-          <Button third large semi_rounded>
-            I want in
-          </Button>
-          <Button secondary large semi_rounded>
-            Learn more
-          </Button>
+          <h3>
+            Join our community of explorers to learn and share with like-minds
+          </h3>
+          <p>
+            Prestige Explorers Community is for cake makers and enthusiasts to
+            have fun and develop themselves.
+          </p>
+          <div>
+            <Button third large semi_rounded>
+              I want in
+            </Button>
+            <Button secondary large semi_rounded>
+              Learn more
+            </Button>
+          </div>
         </div>
-        <img src="/images/explore.png" alt="explore" />
+        <div>
+          <img src="/images/explore.png" alt="explore" />
+        </div>
       </div>
+      <Socials />
     </main>
   );
 };
